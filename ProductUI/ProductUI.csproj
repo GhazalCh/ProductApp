@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.Net.Sdk.Razor">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Mirosoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.0" />
+    </ItemGroup>
+</Project>
