@@ -1,3 +1,4 @@
+using System;
 namespace AspNetCoreProductApi.Models
 {
     public class Product
