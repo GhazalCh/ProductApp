@@ -19,7 +19,7 @@ namespace AspNetCoreProductApi.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var prod = await -_context.Products.FindAsync(id);
-            return prod == null ? NotFound() : ok(prod);
+            return prod == null ? NotFound() : Ok(prod);
         }
 
         [HttpPost]
@@ -42,7 +42,7 @@ namespace AspNetCoreProductApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(int id)
         {
             var prod = await _context.Products.FindAsync(id);
             if (prod == null) return NotFound();
